@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rspec_snapshot_matcher/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'rspec-snapshot-matcher'
+  spec.name          = 'rspec_snapshot_matcher'
   spec.version       = RSpecSnapshotMatcher::VERSION
   spec.authors       = ['Patrick Caldwell']
   spec.email         = ['tncbbthositg@gmail.com']
