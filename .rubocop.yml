@@ -1,0 +1,20 @@
+Metrics/LineLength:
+  Max: 100
+
+Documentation:
+  Enabled: false
+
+Style/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'spec/**/*.rb'
+
+Style/BlockDelimiters:
+  EnforcedStyle: semantic
+  FunctionalMethods:
+    - before
+    - let
+    - let!
+    - subject
+    - expect
