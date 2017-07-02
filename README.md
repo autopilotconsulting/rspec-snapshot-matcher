@@ -9,7 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rspec-snapshot-matcher'
+gem 'rspec_snapshot_matcher'
 ```
 
 And then execute:
@@ -18,12 +18,31 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install rspec-snapshot-matcher
+    $ gem install rspec_snapshot_matcher
 
 ## Usage
 
-TODO: Write usage instructions here
+In your rspec helper
 
+```ruby
+require 'rspec_snapshot_matcher'
+```
+
+Then, in your tests, use the matcher to compare an object to the snapshot for that test.
+
+```ruby
+describe 'some request, method, whatever' do
+  it 'should render the desired html, string, hash, object, struct, ... you name it' do
+    get some_path
+    expect(response.body).to match_snapshot
+  end
+
+  it 'should work with just about anything really' do
+    model = service.get_something
+    expect(model).to match_snapshot
+  end
+end
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

@@ -11,3 +11,5 @@
 /spec/fixtures/snapshots
 
 *.swp
+*.gem
+
