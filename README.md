@@ -1,8 +1,8 @@
-# Rspec::Snapshot::Matcher
+# RSpecSnapshotMatcher
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rspec/snapshot/matcher`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem was inspired by the snapshot feature of Facebook's Jest Javascript testing framework.  At first, I considered the behavior of dubious value because it seemed like it is largely an implementation of the Guru Checks Output anti-pattern.
 
-TODO: Delete this and the text above, and describe your gem
+If you find yourself in a situation where it is difficult to refactor confidently because you have missing coverage in other test suites, then the snapshot matcher can give you a quick and dirty sanity check.
 
 ## Installation
 
